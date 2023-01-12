@@ -14,7 +14,9 @@ hr{
 /* common code end */
 
 
-/* main section start */
+/* ------------------------
+main section start 
+-----------------------------*/
 
 .main{
     display: flex;
@@ -35,7 +37,7 @@ hr{
 }
 
 
-/* top player style start */
+/* -------top player style start---------- */
 .players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -55,10 +57,10 @@ hr{
 .player-name{
     margin-left: 1rem;
 }
-/* player style end */
+/* --------player style end------ */
 
 
-/* blogs style start */
+/* ---------blogs style start------ */
 
 .blogs{
     display: grid;
@@ -136,10 +138,8 @@ hr{
     border-radius: 1rem;
 }
 
+/* courses style end */
 
-
-/* courses style start */
-
-
-
-/* main section end */
+/* --------------------
+main section end
+--------------------- */
