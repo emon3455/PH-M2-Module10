@@ -26,7 +26,7 @@ hr{
 }
 
 .nav{
-    width: 992px;
+    max-width: 992px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -64,7 +64,7 @@ main section start
 -----------------------------*/
 
 .main{
-    width: 992px;
+    max-width: 992px;
     margin: 0 auto;
 }
 
@@ -203,13 +203,12 @@ main section end
 }
 
 .footer-container{
-    width: 992px;
+    max-width: 992px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 1rem;
     display: grid;
     grid-template-columns: 2fr repeat(3,1fr);
-    justify-content: center;
-    align-content: center;
+    
 }
 
 .footer-info.col-1{
@@ -234,12 +233,15 @@ main section end
 }
 
 .footer-sec-title{
+    font-size: 1.1rem;
     margin-bottom: 1rem;
+    color: #562EFF;
 }
 
 .footer-sec-content a{
     text-decoration: none;
     color: white;
+    font-size: 0.8rem;
     margin-bottom: 0.3rem;
 }
 
@@ -311,10 +313,29 @@ main section end
      }
     /* course end */
 
+
+    /* footer start */
+    .footer{
+        padding-right: 0.2rem;
+    }
+
+    .footer-container{
+        width: 100%;
+        margin: 0;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .footer-sec-title{
+        margin-bottom: 0.5rem;
+    }
+    .footer-sec-content{
+        margin-bottom: 1rem;
+    }
+    /* footer end */
+
 }
 
 /* for tablets */
-@media only screen and (min-width: 577px) and (max-width: 992px){
+@media only screen and (min-width: 577px) and (max-width: 1025px){
     
     /* header start */
     .nav{
@@ -375,5 +396,22 @@ main section end
         gap: 1rem;
     }
     /* course end */
+
+    /* footer start */
+
+
+    .footer-container{
+        width: 100%;
+        margin: 0;
+        padding-left: 1rem;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .footer-sec-title{
+        margin-bottom: 0.5rem;
+    }
+    .footer-sec-content{
+        margin-bottom: 1rem;
+    }
+    /* footer end */
 
 }
