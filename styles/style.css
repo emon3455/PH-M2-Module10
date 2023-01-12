@@ -207,7 +207,11 @@ main section end
     .nav-item{
         list-style: none;
         color: white;
-        margin-left: 0.5rem;
+        margin-left: 0rem;
+    }
+    .nav-list{
+        width: 90%;
+        justify-content: space-around;
     }
     /* header end */
 
@@ -259,7 +263,12 @@ main section end
     .nav-item{
         list-style: none;
         color: white;
-        margin-left: 0.8rem;
+        margin-left: 0rem;
+    }
+
+    .nav-list{
+        width: 90%;
+        justify-content: space-around;
     }
     /* header end */
 
