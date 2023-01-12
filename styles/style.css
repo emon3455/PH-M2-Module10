@@ -19,9 +19,8 @@ main section start
 -----------------------------*/
 
 .main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 1024px;
+    margin: 0 auto;
 }
 
 .container{
@@ -42,8 +41,9 @@ main section start
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 0.7rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem;   
 }
+
 .player{
     display: flex;
     align-items: center;
@@ -143,3 +143,68 @@ main section start
 /* --------------------
 main section end
 --------------------- */
+
+/* small phone */
+@media only screen and (max-width: 576px){
+
+    .main{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .players, .blogs{
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 0.5rem;
+    }
+
+    .blog{
+        flex-direction: column;
+    }
+    .thumbnails{
+        width: 100%;
+    }
+    .blog-info{
+        width: 100%;
+    }
+
+}
+
+/* for tablets */
+@media only screen and (min-width: 577px) and (max-width: 992px){
+    
+    .main{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 0.5rem;
+    }
+    /* top player end */
+
+    /* blogs start */
+    .thumbnails{
+        width: 40%;
+    }
+    .blog-info{
+        width: 60%;
+        margin-left: 0.5rem;
+    }
+    .blog-title{
+        font-size: 0.9rem;
+    }
+    .blog-author{
+        font-size: 0.7rem;
+    }
+    .blog{
+        align-items: center;
+    }
+    /* blogs end */
+
+    /* course start */
+    /* course end */
+
+}
